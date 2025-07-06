@@ -1,0 +1,121 @@
+  body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      background-color: #f1f2f6;
+      font-family: Arial, sans-serif;
+    }
+
+    .expenseTracker {
+      width: 50%;
+      max-width: 590px;
+      min-width: 300px;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .expenseTracker h1 {
+      color: #2f3542;
+    }
+
+    .expenseContainer {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    .expenseContainer input,
+    .expenseContainer button {
+      padding: 8px;
+      border: 1px solid #ced6e0;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .expenseContainer button {
+      background-color: #2ed573;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    .expenseContainer button:hover {
+      background-color: #1eae5c;
+    }
+
+    .displayGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      row-gap: 10px;
+      column-gap: 10px;
+      margin-top: 30px;
+    }
+
+    .displayGrid span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .displayGrid button {
+      background-color: #ff4757;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .displayGrid button:hover {
+      background-color: #e84118;
+    }
+
+    #addTotal {
+      margin-top: 15px;
+      padding: 8px 20px;
+      border: none;
+      background-color: #3742fa;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #addTotal:hover {
+      background-color: #2f35c3;
+    }
+
+    .totalExpense {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2f3542;
+    }
+
+    /* ✅ Mobile Responsive */
+   @media screen and (max-width: 500px) {
+    .expenseContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .expenseContainer input,
+    .expenseContainer button {
+        width: 100%;
+    }
+
+    .displayGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #addTotal {
+        width: 100%;
+    }
+}
